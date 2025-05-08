@@ -42,7 +42,25 @@
 
     ![Máquina A](./Configuracion-Red/8º.png)
 
-  - La máquina B se hace a través de interfaz gráfica.
+  - La máquina B se hace a través de networkManager
+
+    **Máquina A**
+     Primero configuraremos NetworkManager para que esté activado y cargue su configuración
+    Cambiamos la línea:
+    Cambiamos false por true
 
     ![Máquina B](./Configuracion-Red/9º.png)
-        
+
+    Creamos el archivo de la interfás de red
+    
+    ![Máquina B](./Configuracion-Red/10º.png)
+
+    Escribimos la configuración IP
+
+    ![Máquina B](./Configuracion-Red/11º.png)
+
+    Ejecutamos el comando <nmcli connection up ‘enp0s8’> para aplicarla
+
+    Y comprobamos con el comando ip -c a
+    
+    ![Máquina B](./Configuracion-Red/12º.png)
